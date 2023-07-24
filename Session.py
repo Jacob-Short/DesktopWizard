@@ -33,6 +33,7 @@ class StartSession:
         self.next_button_1.grid(row=4, column=1)
 
     def handle_next_button_1_release(self, event):
+        print(self.entry_user_name.get())
         self.entry_user_name.destroy()
         self.next_button_1.destroy()
         self.next_button_2.bind("<ButtonRelease>",
